@@ -11,7 +11,33 @@
 
         <div class="header">
             <div class="header__inner">
-                <div class="header__logo logo"></div>
+                <div class="header__wrapper-menu-open">
+                    <div class="header__logo logo"></div>
+
+                    <div class="tumbler">
+                        <div class="tumbler__inner">
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="usermenu">
+                    <div class="usermenu__inner">
+                        <div class="usermenu__item">Мои Друзья</div>
+                        <div class="usermenu__item">Мои Фотографии</div>
+                        <div class="usermenu__item">Мои Видеозаписи</div>
+                        <div class="usermenu__item">Мои Аудиозаписи</div>
+                        <div class="usermenu__item">Мои Сообщения</div>
+                        <div class="usermenu__item">Мои Группы</div>
+                        <div class="usermenu__item">Мои Новости</div>
+                        <div class="usermenu__item">Мои Ответы</div>
+                        <div class="usermenu__item">Мои Закладки</div>
+                        <div class="usermenu__item">Мои Настройки</div>
+                    </div>
+                </div>
+
                 <input type="text" value="Поиск по сайту" class="head-search"/>
                 <div class="user">
                     <div class="user__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
@@ -70,9 +96,18 @@
                             </div>
                         </div>
 
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620427/v620427207/3cf1/BETWpix_rXg.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Инна Ивчук</div>
+                                <div class="search-result__user-info">Россия, Ялта</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <i class="icon-edit-1 header__newpost"></i>
+                <!-- <i class="icon-edit-1 header__newpost"></i> -->
                 <div class="header__menu menu">
                     <div class="menu__item"><a class="link" href="#">люди</a></div>
                     <div class="menu__item"><a class="link" href="#">сообщества</a></div>
@@ -83,7 +118,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="container__left">
                 <div class="sidebar">
@@ -188,7 +222,7 @@
                             <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c617616/v617616045/12d74/VDcZy-VyfO4.jpg)"></div>
                             <div class="userlist__inner userlist__inner_online_yes">
                                 <a href="#" class="userlist__name link">Анна Александрова</a>
-                                <div class="userlist__time">02.06.14</div>
+                                <div class="userlist__time">25.05.14</div>
                                 <div class="userlist__messege">С Днем Рождения :)</div>
                             </div>
                         </div>
@@ -352,6 +386,10 @@
 
                             <div class="messege__search icon-search">
                                 <input type="text" class="messege__search-form" value="Поиск сообщений"/>
+                                <button class="button button-msg">
+                                    <span class="button__label">Новое сообщение</span>
+                                    <span class="button__ground"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
