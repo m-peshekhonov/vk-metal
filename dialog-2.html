@@ -43,7 +43,8 @@
                     </div>
                 </div>
 
-                <input type="text" value="Поиск по сайту" class="head-search"/>
+                <a href="dialog.html" class="link return-back">Диалоги</a>
+                <!-- <input type="text" value="Поиск по сайту" class="head-search"/> -->
                 <div class="user">
                     <div class="user__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
                     <div class="user__name">Михаил</div>
@@ -131,9 +132,24 @@
                             <input type="text" class="input input_theme_gray" value="Начните вводить имя.."/>
                         </div>
                     </div>
+            <!--         <div class="tabs">
+                        <div class="tabs__item tabs__item_active">Друзья</div>
+                        <div class="tabs__item">Беседы</div>
+                    </div> -->
                     <div class="sidebar__menu menu userlist">
 
                         <div class="menu__item userlist__item_active userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c619331/v619331901/dd9c/YXTJcv1DrGw.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Анастасия Земскова</a>
+                                <div class="userlist__time">23:45</div>
+                                <div class="userlist__messege">Я тоже хочу туда ))) 
+                                    <img class="smile" style="background-position: 0px -102px"src="https://vk.com/images/blank.gif"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
                             <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618330/v618330609/641c/AYKrLl1P_Fo.jpg)"></div>
                             <div class="userlist__inner">
                                 <a href="#" class="userlist__name link">Alexandr Panasiyk</a>
@@ -270,16 +286,33 @@
                                 <div class="menu__item menu__item_type_name">Анастасия Земскова <i class=""></i></div>
                                 <div class="menu__item menu__item_type_date">была в сети сегодня в 15:33</div>
                                 <div class="menu__item menu__item_pos_right">
+                                    <a class="link search_msg" href="#">Поиск</a>
                                     <a class="link menu_show" href="#">Действия</a>
                                     <a class="link media_show" href="#">Медиа</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="searchblock">
+                            <div class="searchblock__item searchblock__select select">За всё время</div>
+                            <div class="searchblock__item searchblock__input icon-search">
+                                <input class="input_type_search-msg" value="Поиск по истории" type="text"/>
+                            </div>
+                            <div class="searchblock__item searchblock__close-button">Отмена</div>
+                        </div>
+                        <div class="popup-msg popup-msg_date">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item">За всё время</div>
+                                <div class="popup-msg__item">За 24 часа</div>
+                                <div class="popup-msg__item">За неделю</div>
+                                <div class="popup-msg__item">За месяц</div>
+                                <div class="popup-msg__item">За год</div>
+                            </div>
+                        </div>
+                        <div class="popup__helper popup__helper_type_date"></div>
                         <div class="popup-msg popup-msg_type_all">
                             <div class="popup-msg__inner">
                                 <div class="popup-msg__item">Добавить собеседников</div>
                                 <div class="popup-msg__item">Показать материалы из беседы</div>
-                                <div class="popup-msg__item">Поиск по истории беседы</div>
                                 <div class="popup-msg__item">Показать историю сообщений</div>
                                 <div class="popup-msg__item">Очистить всю историю сообщений</div>
                             </div>
@@ -305,7 +338,7 @@
                                         <div class="user-dialog__date">02.07.14</div>
                                         <div class="user-dialog__content">
                                             Смотри как у нас круто было на День России в Ялте
-                                            <iframe type="text/html" width="395" height="290" src="http://www.youtube.com/embed/sF-ziyBvP8w" class="frame-video" frameborder="0"></iframe>
+                                            <iframe type="text/html" width="393" height="292" src="http://www.youtube.com/embed/sF-ziyBvP8w" class="frame-video" frameborder="0"></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -464,7 +497,6 @@
                                          <img class="smile" style="background-position: 0px -408px" src="https://vk.com/images/blank.gif"/> 
                                          <img class="smile" style="background-position: 0px -493px" src="https://vk.com/images/blank.gif"/>
                                           <img class="smile" style="background-position: 0px -544px" src="https://vk.com/images/blank.gif"/> 
-                                           <img class="smile" style="background-position: 0px -629px" src="https://vk.com/images/blank.gif"/> 
                                     </div>
                                     <div class="userform__attach">Прикрепить</div>
                                     <div class="popup-msg popup-msg_type_attach">
@@ -483,7 +515,7 @@
 
                             <div class="editform editform_hide">
                                 <div class="editform__inner">
-                                    <div class="editform__button">Переслать 1</div>
+                                    <div class="editform__button forward-button">Переслать 1</div>
                                     <div class="editform__button">Важное 1</div>
                                     <div class="editform__button editform__button_red">Удалить 1</div>
                                     <div class="editform__button editform__button_light">Отмена</div>
@@ -494,6 +526,148 @@
                 </div>
             </div>
         </div>
+
+        <div class="popup popup_hide popup_type_forward-msg">
+            <div class="popup__inner">
+                <div class="popup__search">
+                    <div class="sidebar__search-wrapper icon-search">
+                            <input type="text" class="input input_theme_gray input_filter-fr" value="Начните вводить имя.."/>
+                        </div>
+                </div>
+
+                    <div class="menu userlist userlist_forward">
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618330/v618330609/641c/AYKrLl1P_Fo.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Alexandr Panasiyk</a>
+                                <div class="userlist__time">22:37</div>
+                                <div class="userlist__messege">I left my key in my room. Please take me</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_2">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c616716/v616716690/15c66/epds5vKbWxM.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Вадим Елистратов</a>
+                                <div class="userlist__time">18.07.14</div>
+                                <div class="userlist__messege">Сегодня в Турции ходили в азиатскую часть. Мне понарвилось.</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_3">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620324/v620324145/fa18/_iwM6t40yMU.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Неонилла Усенко</a>
+                                <div class="userlist__time">17.07.14</div>
+                                <div class="userlist__messege">Через пол часа идем на море</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_4">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c617522/v617522257/1331d/1M1ftHWJkQQ.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Алина Оникиева</a>
+                                <div class="userlist__time">02.06.14</div>
+                                <div class="userlist__messege">Как дела ?</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_3">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c616228/v616228452/15406/sGx9wUKAkWY.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Лена Оболонская</a>
+                                <div class="userlist__time">22:37</div>
+                                <div class="userlist__messege">Давай через пару часиков пойдем в центр</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_2">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620430/v620430145/f0bb/pGD6ZzwFKkE.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Руслан Мендус</a>
+                                <div class="userlist__time">18.07.14</div>
+                                <div class="userlist__messege">Я добавил на сайт фоторепортажи</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c11454/v11454126/1213/lpc0nMsUgtw.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Eugene Godunov</a>
+                                <div class="userlist__time">17.06.14</div>
+                                <div class="userlist__messege">Евген, когда приедешь ?</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_4">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618228/v618228112/a99b/KriDaytXiCQ.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Анастасия Тюева</a>
+                                <div class="userlist__time">02.06.14</div>
+                                <div class="userlist__messege">Привет <img class="smile" src="https://vk.com/images/blank.gif"/> </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_2">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618819/v618819483/5e15/a1Pq-pxF57k.jpg)"></div>
+                            <div class="userlist__inner">
+                                <a href="#" class="userlist__name link">Дима Кокорев</a>
+                                <div class="userlist__time">22:37</div>
+                                <div class="userlist__messege">Через час самолет. Не опаздывай</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Надя Шувалова</a>
+                                <div class="userlist__time">02.06.14</div>
+                                <div class="userlist__messege">Женушке повезет твоей. Во всем разбираешся</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c617616/v617616045/12d74/VDcZy-VyfO4.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Анна Александрова</a>
+                                <div class="userlist__time">25.05.14</div>
+                                <div class="userlist__messege">С Днем Рождения :)</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c6067/v6067470/c196/AYzZTUGyKAQ.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Кирилл Ромашов</a>
+                                <div class="userlist__time">23.05.14</div>
+                                <div class="userlist__messege">Привет, слушай, а как мне сделать</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c314931/v314931963/2a5b/a7SA87RYtgU.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Екатерина Фураева</a>
+                                <div class="userlist__time">21.05.14</div>
+                                <div class="userlist__messege">А давай в Москве встретимся ?</div>
+                            </div>
+                        </div>
+
+                        <div class="menu__item userlist__item userlist__item_pos_1">
+                            <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c322126/v322126351/3c2c/4sUry3heMAo.jpg)"></div>
+                            <div class="userlist__inner userlist__inner_online_yes">
+                                <a href="#" class="userlist__name link">Кристина Червинская</a>
+                                <div class="userlist__time">20.05.14</div>
+                                <div class="userlist__messege">Давно мы не общались )</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+        <div class="paranja"></div>
 
     </div>
 </body>

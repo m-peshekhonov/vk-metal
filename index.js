@@ -1,7 +1,8 @@
 $(function() {
+    
+    /*  Код для демонстрации функциональности некоторых блоков */
 
     var windowHeight = $(window).height() - 140; // не нужно на всю высоту экрана
-
 
     setHeightContent(windowHeight);
 
@@ -9,6 +10,9 @@ $(function() {
         $('.sidebar__menu').css('height', height);
         $('.m-user') && $('.m-user').css('height', height - 41); // 55 - поле поиска
         $('.user-dialog') && $('.user-dialog').css('height', height - (force ? 60 : 111));
+
+        $('.popup_type_forward-msg').css('height', height);
+        $('.userlist_forward').css('height', height - 60);
     }
 
     function destroyPopup() {
@@ -31,7 +35,22 @@ $(function() {
         $('.popup-msg_type_all').removeClass('popup-msg_show');
     });
 
-    $('.popup__helper').hover(destroyPopup);
+    $('.settings_open').hover(function() {
+
+        $('.popup-msg_settings').addClass('popup-msg_show');
+    });
+
+    $('.popup-msg_settings').mouseleave(function() {
+
+        $(this).removeClass('popup-msg_show');
+    });
+
+
+    $('.popup__helper, .search_msg').hover(destroyPopup);
+
+    $('.popup-msg_date').mouseleave(function() {
+        $(this).removeClass('popup-msg_show');
+    });
 
     $('.userform__attach').hover(function() {
         $('.popup-msg_type_attach').addClass('popup-msg_show');
@@ -39,7 +58,10 @@ $(function() {
 
 
     $(window).resize(function() {
-        setHeightContent($(window).height() - 140, $('.page').hasClass('page_hide') ? true : false);
+        var windowHeight = $(window).height() - 140,
+            isHide = $('.page').hasClass('page_hide');
+
+        setHeightContent(windowHeight, isHide ? true : false);
     });
 
     $('.user-dialog__item').on('click', function() {
@@ -64,6 +86,44 @@ $(function() {
         $('.page').removeClass('page_hide');
 
         setHeightContent($(window).height() - 140);
+    });
+
+    $('.forward-button').on('click', function() {
+        $('.popup_type_forward-msg').addClass('popup_show');
+    });
+
+    $('.paranja, .close_popup-button').on('click', function() {
+        $('.popup_type_forward-msg').removeClass('popup_show');
+        $('.popup_type_create-dialog').removeClass('popup_show');
+    });
+
+    $('.create-dialog').on('click', function() {
+        $('.popup_type_create-dialog').addClass('popup_show');
+    });
+
+    $('.popup .userlist__item').on('click', function() {
+        $(this).toggleClass('userlist__item_active');
+    });
+
+    $('.search_msg').on('click', function(e) {
+        e.preventDefault();
+
+        $('.searchblock').addClass('searchblock_show');
+        $('.user-dialog__item').eq(0).animate({
+            'marginTop': '28px'
+        }, 200);
+    });
+
+    $('.searchblock__close-button').on('click', function() {
+        $('.searchblock').removeClass('searchblock_show');
+        $('.user-dialog__item').eq(0).animate({
+            'marginTop': '0'
+        }, 200);
+    });
+
+    $('.searchblock__select').on('click', function() {
+        $(this).toggleClass('searchblock__select_active');
+        $('.popup-msg_date').toggleClass('popup-msg_show');
     });
 
 });
