@@ -441,6 +441,23 @@
     background: #EAEFF5;
 }
 
+.userlist__item_active,
+.userlist__item_active:hover
+{
+    background: #5780AB;
+}
+
+.userlist__item_active .userlist__name
+{
+    color: #fff;
+}
+
+.userlist__item_active .userlist__messege,
+.userlist__item_active .userlist__time
+{
+    color: #E8EEF7;
+}
+
 .userlist__item,
 .userlist__inner
 {
@@ -470,6 +487,11 @@
 .userlist__name
 {
     font-weight: 700;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 130px;
 
     margin-top: 3px;
     display: inline-block;
@@ -507,7 +529,7 @@
     text-align: right;
     float: right;
 
-    color: #999;
+    color: #8C8E91;
 }
 
 .userlist__messege
@@ -518,7 +540,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
 
-    margin-top: 5px;
     max-width: 150px;
 }
 
@@ -587,7 +608,7 @@
 {
     width: 95%;
 
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 5px 18px;
 }
 
@@ -812,7 +833,7 @@
 {
     font-size: .85em;
 
-    color: #999;
+    color: #8C8E91;
 }
 
 .smile
@@ -859,8 +880,7 @@
 
     height: 40px;
 
-    margin-left: 1px;
-    margin-top: -5px;
+    margin-left: 2px;
 
     background: #FFF;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -1006,4 +1026,59 @@
     height: 2px;
     background: #fff;
     margin-bottom: 3px;
+}
+
+
+.images-collection
+{
+    width: 100%;
+
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.images-collection__item
+{
+    display: block;
+    margin: 0 3px 2px 0;
+
+    float: left;
+
+    background-size: 100%;
+}
+
+/* 3 фотки */
+.images-collection_3 .images-collection__item_1
+{
+    width: 260px;
+    height: 260px;
+}
+
+/* 5 фоток */
+.images-collection_5 .images-collection__item_1,
+.images-collection_5 .images-collection__item_2
+{
+    width: 195px;
+    height: 195px;
+}
+
+.images-collection_3 .images-collection__item_2,
+.images-collection_3 .images-collection__item_3,
+.images-collection_5 .images-collection__item_3,
+.images-collection_5 .images-collection__item_4,
+.images-collection_5 .images-collection__item_5
+
+{
+    width: 129px;
+    height: 129px;
+}
+
+.frame-video
+{
+    margin-top: 10px;
+}
+
+.map-msg
+{
+    margin-top: 10px;
 }
