@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' type='text/css' href='css/common.css' />
+    <link rel='stylesheet' type='text/css' href='css/index.css' />
+    <link rel='stylesheet' type='text/css' href='css/feed.css' />
+    <link rel='stylesheet' type='text/css' href='css/fontello.css' />
+    <script type="text/javascript" src="http://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="feed.js"></script>
+    <link rel="shortcut icon" href="https://vk.com/images/faviconnew.ico?3" />
+
+    <title>Новости</title>
+</head>
+<body class="page">
+    <div class="pager__inner">
+
+        <div class="header">
+            <div class="header__inner">
+                <div class="header__wrapper-menu-open">
+                    <div class="header__logo logo"></div>
+
+                    <div class="tumbler">
+                        <div class="tumbler__inner">
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="usermenu">
+                    <div class="usermenu__inner">
+                        <div class="usermenu__item">Моя Страница</div>
+                        <div class="usermenu__item">
+                            Мои Друзья
+                            <div class="usermenu__counter">5k</div>
+                        </div>
+                        <div class="usermenu__item">Мои Фотографии</div>
+                        <div class="usermenu__item">Мои Видеозаписи</div>
+                        <div class="usermenu__item">Мои Аудиозаписи</div>
+                        <div class="usermenu__item">
+                            Мои Сообщения
+                            <div class="usermenu__counter">7</div>
+                        </div>
+                        <div class="usermenu__item">Мои Группы</div>
+                        <div class="usermenu__item">Мои Новости</div>
+                        <div class="usermenu__item">Мои Ответы</div>
+                        <div class="usermenu__item">Мои Закладки</div>
+                        <div class="usermenu__item usermenu__item_separate">Мои Настройки</div>
+                        <div class="usermenu__item">Приложения</div>
+                        <div class="usermenu__item">Документы</div>
+                    </div>
+                </div>
+
+                <input type="text" value="Поиск по сайту" class="head-search"/>
+                <div class="user">
+                    <div class="user__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                    <div class="user__name">Михаил</div>
+                </div>
+                <div class="search-result">
+                    <div class="search-result__inner">
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c614916/v614916534/10f6b/VpRkRbsKCMI.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анечка Климина</div>
+                                <div class="search-result__user-info">Россия, Ялта</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Надя Шувалова</div>
+                                <div class="search-result__user-info">Россия, Симферополь</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c619331/v619331901/dd9c/YXTJcv1DrGw.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анастасия Земскова</div>
+                                <div class="search-result__user-info">Украина, Кривой Рог</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c408321/v408321005/9bdf/yNQ6cJhHxZ4.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Давид Ракитянский</div>
+                                <div class="search-result__user-info">Россия, Партенит</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c424620/v424620679/3b05/NAauzob2Uus.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анатолий Давыдчик</div>
+                                <div class="search-result__user-info">Беларусь, Минск</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620817/v620817728/980e/2HUzWnjYCm8.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Денис Прокопов</div>
+                                <div class="search-result__user-info">Литва, Вильнюс</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620427/v620427207/3cf1/BETWpix_rXg.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Инна Ивчук</div>
+                                <div class="search-result__user-info">Россия, Ялта</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <i class="icon-edit-1 header__newpost"></i> -->
+                <div class="header__menu menu">
+                    <div class="menu__item"><a class="link" href="#">люди</a></div>
+                    <div class="menu__item"><a class="link" href="#">сообщества</a></div>
+                    <div class="menu__item"><a class="link" href="#">игры</a></div>
+                    <div class="menu__item"><a class="link" href="#">музыка</a></div>
+                    <div class="menu__item"><a class="link" href="#">помощь</a></div>
+                    <div class="menu__item"><a class="link" href="#">выйти</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__left">
+                <div class="news-top">
+                    <div class="menu cf news-top__menu">
+                        <div class="menu__item menu__item_type_news">Все новости</div>
+                        <div class="popup-msg popup-news_filter">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item popup-msg__item_active">Все новости</div>
+                                <div class="popup-msg__item">Популярные новости</div>
+                            </div>
+                        </div>
+                        <div class="menu__item menu__item_pos_right">
+                            <a class="link search_msg" href="#">Поиск</a>
+                            <a class="link media_show" href="#">Список источников</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(https://pp.vk.me/c304802/g44622996/d_87e54b62.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">Animal Planet</a>
+                            <a href="#" class="box__time link">39 секунд назад</a>
+                            <div class="box__text">
+                                Невероятные фотографии животных ВКонтакте. 
+                                <br/><br/>
+                                Животный мир, несомненно, очень богат и огромен. Он привлекает своей красотой, неизведанностью и разнообразием своих обитателей. В настоящее время огромное количество и взрослых, и детей очень интересуются жизнью животных, их повадками, психикой, поведением, способами добывания пищи, местами обитания, а также такими важными вопросами, как содержание животных в домашних условиях и их роль в жизни человека.
+                            </div>
+                            <div class="box__photos cf">
+                                <div class="box__photo-item box__photo-item_1" style="background-image: url(pic/1.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_2" style="background-image: url(pic/2.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_3" style="background-image: url(pic/3.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_4" style="background-image: url(pic/4.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_5" style="background-image: url(pic/5.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_6" style="background-image: url(pic/6.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_7" style="background-image: url(pic/7.jpeg)"></div>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                    <span class="share-panel__item-count">7</span>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">25</span>
+                                </div>
+                            </div>
+                            <div class="show-more-comments">
+                                <span class="show-more-comments__text">
+                                    Показать все <span class="show-more-comments__count">5</span> комментариев
+                                </span>
+                            </div>
+                            <div class="box-comments">
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Михаил</a>
+                                        <div class="box-comments__text">
+                                            А как же этот персонаж ?
+                                            <div class="box-comments__image-attach" style="background-image: url(pic/ocean/8.jpg)"></div>
+                                        </div>
+                                        <a href="#"class="box-comments__time">3 минуты назад</a>
+                                        <div class="like-post">
+                                            <div class="like-post__text">Мне нравится</div>
+                                            <div class="like-post__count">
+                                                <i class="like-post__icon icon-heart-1"></i>
+                                                <span class="like-post__c">3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic"  style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Надя</a>
+                                        <div class="box-comments__text">Животный мир, несомненно, очень богат и огромен. Он привлекает своей красотой, неизведанностью и разнообразием своих обитателей. В настоящее время огромное количество и взрослых!</div>
+                                        <a href="#"class="box-comments__time">15 минут назад</a>
+                                        <div class="like-post">
+                                            <div class="like-post__text">Мне нравится</div>
+                                            <div class="like-post__count">
+                                                <i class="like-post__icon icon-heart-1"></i>
+                                                <span class="like-post__c">15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic"  style="background-image: url(https://pp.vk.me/c6067/v6067470/c196/AYzZTUGyKAQ.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Кирилл</a>
+                                        <div class="box-comments__text">
+                                            А что вы знаете о политике ?
+                                            <br/>
+                                            Россия — один из ключевых участников международных отношений. В качестве одного из пяти постоянных членов Совета безопасности ООН Россия несёт особую ответственность за поддержание международного мира и безопасности.
+                                        </div>
+                                        <a href="#"class="box-comments__time">20 минут назад</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs608825.vk.me/v608825775/1659e/UQ6KIUekUFE.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">Михаил Пешехонов</a>
+                            <a href="#" class="box__time link">час назад</a>
+                            <div class="box__text">
+                                Это просто ElastoMania какая-то!
+                                <br/><br/>
+                                Шотландский спортсмен, один из самых известных велосипедистов современности, выступающий сразу в нескольких стилях: велотриал, даунхилл, кросс-кантри и стрит. Для любителей велоспорта стиль катания Дэнни кажется чем-то невероятным: удивительным образом шотландец сумел объединить сразу несколько стилей, причем, в отличие от многих других спортсменов, его трюки выглядят легко и свободно, даже несмотря на высочайший уровень сложности.
+                            </div>
+                            <div class="box__videos">
+                                <iframe src="http://vk.com/video_ext.php?oid=7727775&id=163153491&hash=cf5c7b8630a8da96&hd=2" width="550" height="310" frameborder="0"></iframe>
+                                <a href="#" class="box__video-title link">
+                                    <i class="icon-video-alt"></i>Danny MacAskill - уроки езды по городу.
+                                </a>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                    <span class="share-panel__item-count">11</span>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">169</span>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs620420.vk.me/v620420554/100cf/H-hCbcGE45g.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">Больше, чем фото</a>
+                            <a href="#" class="box__time link">три часа назад</a>
+                            <div class="box__text">
+                                Океаны покрывают более 3/4 земной поверхности и заключают в себе удивительное разнообразие животных и растений. Среди гор и вулканов, возвышенностей и равнин, более обширных, чем на суше, живут как самые большие хищники, так и самые микроскопичекие животные мира.
+                                <br/><br/>
+                                Источник: 
+                                <a href="http://faunazoo.ru/zhivotnye-okeana" target="_blank" class="link">http://faunazoo.ru/zhivotnye-okeana</a>
+                            </div>
+                            <div class="box__photos box__photos_line cf">
+                                <div class="box__photo-item box__photo-item_1" style="background-image: url(pic/ocean/1.jpg)"></div>
+                                <div class="box__photo-item box__photo-item_2" style="background-image: url(pic/ocean/2.jpg)"></div>
+                                <div class="box__photo-item box__photo-item_3" style="background-image: url(pic/ocean/3.jpg)"></div>
+                                <div class="box__photo-item box__photo-item_4" style="background-image: url(pic/ocean/4.jpg)"></div>
+                                <div class="box__photo-item box__photo-item_5" style="background-image: url(pic/ocean/5.jpg)"></div>
+                                <div class="box__photo-item box__photo-item_6" style="background-image: url(pic/ocean/6.jpg)"></div>
+                                 <div class="box__photo-item box__photo-item_7" style="background-image: url(pic/ocean/7.jpg)"></div>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                    <span class="share-panel__item-count">135</span>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">1 750</span>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs619221.vk.me/v619221934/bc4b/tU0DUD7x2hU.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">TJournal</a>
+                            <a href="#" class="box__time link">сегодня в 14:32</a>
+                            <div class="box__text">
+                                Ветерану из США, выселенному из дома престарелых за игру на гавайской укулеле, собирают деньги краудфандингом. 
+
+                                <br/><br/>
+                                <a href="http://tjournal.ru/paper/veteran-kicked-out-retirement-home" target="_blank" class="link">http://tjournal.ru/paper/veteran-kicked-out-retirement-home</a>
+                            </div>
+                            <div class="box__photos box__photos_line cf">
+                                <div class="box__photo-item box__photo-item_1_" style="background-image: url(http://cs7001.vk.me/c7005/v7005383/29942/Q7cDVo7deFk.jpg)"></div>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                    <span class="share-panel__item-count">13</span>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">136</span>
+                                </div>
+                            </div>
+                            <div class="show-more-comments">
+                                <span class="show-more-comments__text">
+                                    Показать все <span class="show-more-comments__count">5</span> комментариев
+                                </span>
+                            </div>
+                            <div class="box-comments">
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic" style="background-image: url(http://cs305615.vk.me/u107971370/d_735524e3.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Григорий</a>
+                                        <div class="box-comments__text">
+                                            Молодцы конечно, что собирают деньги!
+                                            <div class="box-comments__image-attach" style="background-image: url(http://static5.cmtt.ru/tj_paper/comments/9-5196/66983753cf748d19ba5.jpg); width: 235px; height: 155px;"></div>
+                                        </div>
+                                        <a href="#"class="box-comments__time">3 минуты назад</a>
+                                        <div class="like-post">
+                                            <div class="like-post__text">Мне нравится</div>
+                                            <div class="like-post__count">
+                                                <i class="like-post__icon icon-heart-1"></i>
+                                                <span class="like-post__c">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic"  style="background-image: url(http://cs320728.vk.me/v320728140/b000/Z3SGk2r_I9I.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Юля</a>
+                                        <div class="box-comments__text">А во всем виновата администрация, я считаю! Как можно было так поступить !?(((</div>
+                                        <a href="#"class="box-comments__time">15 минут назад</a>
+                                    </div>
+                                </div>
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic"  style="background-image: url(http://cs616023.vk.me/v616023480/17b1a/pTyHLv-3g3s.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Виктория</a>
+                                        <div class="box-comments__text">
+                                            "Они постоянно мешали мне и говорили: «Возвращайся в свою комнату». Как ребёнку." Ну а то что ты кому то мешал как то не волнует?
+                                        </div>
+                                        <a href="#"class="box-comments__time">20 минут назад</a>
+                                        <div class="like-post">
+                                            <div class="like-post__text">Мне нравится</div>
+                                            <div class="like-post__count">
+                                                <i class="like-post__icon icon-heart-1"></i>
+                                                <span class="like-post__c">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs416628.vk.me/v416628492/8716/StaPvhWh5gM.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">ВКонтакте для iPhone</a>
+                            <a href="#" class="box__time link">17 мая в 10:49</a>
+                            <div class="box__text box__repost">
+                                <div class="box__repost-inner">
+                                    <div class="box__repost-avatar" style="background-image: url(http://cs4532.vk.me/u06492/e_6e00714a.jpg)"></div>
+                                    <div class="box__repost-content">
+                                        <div class="box__repost-title">
+                                            <a class="box__repost-icon-re link icon-retweet"></a>
+                                            <a href="#" class="link">Андрей Рогозов</a>
+                                        </div>
+                                        <a href="#" class="box__repost-time link">16 мая 2014 в 23:28</a>
+                                    </div>
+                                </div>
+                                <div class="box__text box__text_more_yes">
+                                    Вчера из AppStore был убран официальный клиент ВКонтакте для iPad в связи с нарушением пункта 18.2 правил размещения приложений (наличие эротического содержания в загружаемых пользователями материалах). Незадолго до этого из AppStore по той же причине пропало приложение для iPhone.
+                                    <div class="box__show-more">Показать полностью</div>
+                                    <div class="box__hide-text">
+                                        <br/>
+                                        Так исторически сложилось, что во ВКонтакте материалы для взрослых распространялись более свободно, чем в других социальных сетях. Однако это не значит, что мы не принимали мер по модерации подобного контента. За последний год мы реализовали безопасный поиск по видеозаписям, сделали закрытыми по умолчанию большинство страниц и сообществ, содержащих "взрослые" материалы. Появился механизм жалоб на контент, позволяющий модераторам ВКонтакте эффективно размечать такие материалы.
+                                        <br/><br/>
+                                        По мере увеличения интереса компании Apple к российскому рынку ужесточалась и политика модерации приложений в AppStore. Интересно, что еще полгода назад меры, предпринимаемые нами по работе с пользовательским контентом, Apple устраивали.
+                                        <br/><br/>
+                                        В данный момент мы делаем все возможное, чтобы вернуть приложение в AppStore. Задача стоит нетривиальная, т.к. ежедневно пользователями ВКонтакте загружается свыше 80 000 000 фотографий и 600 000 видеозаписей.
+                                        <br/><br/>
+                                        Кстати, вместе с возвращением приложений в AppStore мы представим полностью обновленный дизайн клиента для iPad в стиле iOS 7. Приложение VK App для iPhone также будет существенно обновлено – появится множество новых функций, включая расширенное управление публикациями на страницах и в сообществах, создание опросов, стикеры, интеграцию с iTunes и многое другое.
+                                        <br/><br/>
+                                        Во вложении – несколько скриншотов нового приложения для iPad.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__photos box__photos_3 cf">
+                                <div class="box__photo-item box__photo-item_1" style="background-image: url(pic/ipad/1.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_2" style="background-image: url(pic/ipad/2.jpeg)"></div>
+                                <div class="box__photo-item box__photo-item_3" style="background-image: url(pic/ipad/3.jpeg)"></div>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                    <span class="share-panel__item-count">624</span>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">4 958</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs618030.vk.me/v618030585/1138e/Q7_qNP21fGU.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">Ирина Королева</a>
+                            <a href="#" class="box__time link">три дня назад</a>
+                            <div class="box__text">
+                                Интересно будет на это посмотреть! Я получала больше месяца с километровыми очередями.
+                            </div>
+                            <div class="link-attach">
+                                <div class="link-attach__pic" style="background-image: url(pic/link.jpeg)"></div>
+                                <div class="link-attach__inner">
+                                    <a href="#" class="link-attach__title link">Россияне смогут получать внутренние паспорта за час</a> 
+                                    <a href="#" class="link-attach__link link">Gazeta.ru</a>
+                                    <div class="link-attach__text">В скором времени граждане России смогут оформлять внутренние паспорта за час. Об этом сообщает «Интерфакс» со ссылкой на Федеральную миграционную...</div>
+                                </div>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">2</span>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__close"></div>
+                        <div class="box__avatar" style="background-image: url(http://cs616324.vk.me/v616324281/14fb1/EjoxO3GTEdo.jpg)"></div>
+                        <div class="box__inner">
+                            <a href="#" class="box__title link">Кристина Афанасьева</a>
+                            <a href="#" class="box__time link">три дня назад</a>
+                            <div class="box__text">
+                                Смотрите где я сейчас =)
+                            </div>
+                            <div class="box__map">
+                                <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=1DW_H25RLtgkF4QWjhXNFbpXjzJn0eFO&width=550&height=300"></script>
+                            </div>
+                            <div class="share-panel">
+                                <div class="share-panel__item share-panel__item_type_forward">
+                                    <span class="share-panel__item-text">Поделиться</span>
+                                    <i class="share-panel__item-count-icon icon-forward"></i>
+                                </div>
+                                <div class="share-panel__item share-panel__item_type_like">
+                                    <span class="share-panel__item-text">Нравится</span>
+                                    <i class="share-panel__item-count-icon icon-heart-1"></i>
+                                    <span class="share-panel__item-count">2</span>
+                                </div>
+                            </div>
+                            <div class="box-comments box-comments_e">
+                                <div class="box-comments__item">
+                                    <div class="box-comments__avatar">
+                                        <div class="box-comments__avatar-pic" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    </div>
+                                    <div class="box-comments__inner">
+                                        <a href="#" class="link box-comments__name">Михаил</a>
+                                        <div class="box-comments__text">
+                                            Пойдем гулять часиков в 9 пол 10 ?
+                                        </div>
+                                        <a href="#"class="box-comments__time">3 минуты назад</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <div class="comment-form__inner">
+                                    <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                    <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                    <div class="comment-form__controls">
+                                        <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                        <div class="comment-form___button button">Отправить</div>
+                                        <div class="comment-form___button-cancel button">Отмена</div>
+                                        <div class="comment-form___attach">Прикрепить</div>
+                                    </div>
+                                    <div class="popup-msg popup-wall_type_attach-wall">
+                                        <div class="popup-msg__inner">
+                                            <div class="popup-msg__item">Документ</div>
+                                            <div class="popup-msg__item">Аудиозапись</div>
+                                            <div class="popup-msg__item">Видеозапись</div>
+                                            <div class="popup-msg__item">Фотографию</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__right"></div>
+        </div>
+
+    </div>
+</body>
+</html>

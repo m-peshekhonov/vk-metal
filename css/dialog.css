@@ -261,36 +261,6 @@
     padding-bottom: 30px;
 }
 
-.smile-attach
-{
-    position: absolute;
-    right: 187px;
-
-    margin-top: -43px;
-
-    font-size: 10px;
-
-    box-shadow: 0 0 0 2px #BAC8DA;
-    border-radius: 50%;
-    padding: 0px 2px 0px 2px;
-
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    -o-transition: .25s;
-    transition: .25s;
-
-    color: #BAC8DA;
-
-    cursor: pointer;
-}
-
-.smile-attach:hover
-{
-    box-shadow: 0 0 0 2px #6E8AA8;
-    color: #6E8AA8;
-}
-
 .new-msg
 {
     margin: 10px -5px 16px;

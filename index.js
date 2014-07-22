@@ -110,7 +110,7 @@ $(function() {
 
         $('.searchblock').addClass('searchblock_show');
         $('.user-dialog__item').eq(0).animate({
-            'marginTop': '28px'
+            'marginTop': '52px'
         }, 200);
     });
 
