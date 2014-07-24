@@ -8,7 +8,12 @@ $(function() {
         filterNews = $('.menu__item_type_news'),
         filterNewsPopup = $('.popup-news_filter'),
         moreText = $('.box__text_more_yes'),
-        hidetext = $('.box__hide-text');
+        hidetext = $('.box__hide-text'),
+        sourceList = $('.userlist_source'),
+        sourceLink = $('.source_link'),
+        sourcePopup = $('.popup_type_source');
+
+    setSourceheight();
 
     //  Открыть попап с аттач-ссылками
     attachCommentLink.on('mouseover', function() {
@@ -41,9 +46,25 @@ $(function() {
         $(this).removeClass('popup-msg_show');
     });
 
+    // Показать больше текста в записях блога
     moreText.on('click', function() {
         $(this).find('.box__show-more').remove();
         hidetext.addClass('box__hide-text_show');
     });
 
+    sourceLink.on('click', function() {
+        sourcePopup.addClass('popup_show');
+    });
+
+    $('.close_source, .paranja').on('click', function() {
+        sourcePopup.removeClass('popup_show');
+    });
+
+    $(window).on('resize', function() {
+        setSourceheight();
+    });
+
+    function setSourceheight() {
+        sourceList.css('height', $(window).height() - 260);
+    }
 });
