@@ -11,9 +11,21 @@ $(function() {
         hidetext = $('.box__hide-text'),
         sourceList = $('.userlist_source'),
         sourceLink = $('.source_link'),
-        sourcePopup = $('.popup_type_source');
+        sourcePopup = $('.popup_type_source'),
+        headerLogo = $('.header__wrapper-menu-open'),
+        searchTumbler = $('.search_tumb'),
+        selectTypeSearch = $('.msg-type-select'),
+        select = $('.select'),
+        newPostAttach = $('.comment-form___attach'),
+        newPostTextarea = $('.new-post__textarea'),
+        headHeight = $('.header').height(),
+        tabsList = $('.tabs-list');
 
     setSourceheight();
+
+    select.on('click', function() {
+        $(this).toggleClass('select_active');
+    });
 
     //  Открыть попап с аттач-ссылками
     attachCommentLink.on('mouseover', function() {
@@ -52,7 +64,8 @@ $(function() {
         hidetext.addClass('box__hide-text_show');
     });
 
-    sourceLink.on('click', function() {
+    sourceLink.on('click', function(e) {
+        e.preventDefault();
         sourcePopup.addClass('popup_show');
     });
 
@@ -60,8 +73,50 @@ $(function() {
         sourcePopup.removeClass('popup_show');
     });
 
+    headerLogo.on('mouseover', function() {
+        $('.tumbler__counter').hide(200);
+    });
+
+    searchTumbler.on('click', function() {
+        $('.search-adv').slideDown(300);
+    });
+
+    selectTypeSearch.on('click', function() {
+        $('.popup-msg_type').toggleClass('popup-msg_show');
+    });
+
+    $('.popup-msg_type').on('mouseleave', function() {
+        $(this).removeClass('popup-msg_show');
+    });
+
+    newPostAttach.on('mouseover', function() {
+        $(this).parents('.new-post').find('.popup-msg').addClass('popup-msg_show');
+    });
+
+    newPostTextarea.on('click', function() {
+        $(this).addClass('new-post__textarea_show');
+    });
+
     $(window).on('resize', function() {
         setSourceheight();
+    });
+
+    $(window).on('scroll', function() {
+
+        var windowTop = $(this).scrollTop() + 30,
+            fixTop = headHeight + $('.new-post').height();
+
+        if(windowTop > fixTop) {
+            tabsList.addClass('tabs-list_fixed');
+        } else {
+            tabsList.hasClass('tabs-list_fixed') &&
+                    tabsList.removeClass('tabs-list_fixed');
+        }
+    });
+
+    $('.comment-form___settings').on('click', function() {
+        $(this).toggleClass('comment-form___settings_active');
+        $('.new-post__sub-controls').toggleClass('new-post__sub-controls_show');
     });
 
     function setSourceheight() {

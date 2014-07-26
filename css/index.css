@@ -1361,3 +1361,20 @@
 {
     margin-top: 10px;
 }
+
+.tumbler__counter
+{
+    font-size: 11px;
+
+    position: absolute;
+    top: -5px;
+    z-index: 150;
+
+    margin-left: 6px;
+    padding: 0 7px 0 6px;
+
+    border-radius: 50%;
+
+    background: rgba(236, 87, 87, 0.9);
+    color: #fff;
+}

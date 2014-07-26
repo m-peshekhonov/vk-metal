@@ -6,7 +6,7 @@
     <link rel='stylesheet' type='text/css' href='css/index.css' />
     <link rel='stylesheet' type='text/css' href='css/feed.css' />
     <link rel='stylesheet' type='text/css' href='css/fontello.css' />
-    <script type="text/javascript" src="http://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="feed.js"></script>
     <link rel="shortcut icon" href="https://vk.com/images/faviconnew.ico?3" />
@@ -27,6 +27,7 @@
                             <div class="tumbler__item"></div>
                             <div class="tumbler__item"></div>
                         </div>
+                        <div class="tumbler__counter">2</div>
                     </div>
                 </div>
 
@@ -146,10 +147,41 @@
                             </div>
                         </div>
                         <div class="menu__item menu__item_pos_right">
-                            <a class="link search_msg" href="#">Поиск</a>
+                            <a class="link search_msg search_tumb" href="#">Поиск</a>
                             <a class="link source_link" href="#">Список источников</a>
                         </div>
                 
+                    </div>
+                </div>
+
+                <div class="search-adv">
+                    <div class="search-adv__inner">
+                        <div class="search-adv__search icon-search">
+                            <input class="input_type_search-msg adv-search-input" value="Поиск по новостям" type="text"/>
+                        </div>
+                        <div class="search-adv__item">
+                            <div class="searchblock__item msg-type-select searchblock__select select">Тип сообщения</div>
+                            <div class="searchblock__item searchblock__select select">Вид прикрепления</div>
+                            <div class="searchblock__item searchblock__select select">«Мне нравится»</div>
+                        </div>
+                        <div class="search-adv__item">
+                            <div class="searchblock__item searchblock__select select">Упоминание ссылки</div>
+                            <div class="searchblock__item searchblock__select select">Упоминание текста</div>
+                            <div class="searchblock__input searchblock__input">
+                                <input class="input_type_search-msg" value="Исключить слова" type="text"/>
+                            </div>
+                        </div>
+                        <div class="search-icon">
+                            <div class="search-icon__ico"></div>
+                            <div class="search-icon__text">Геолокация</div>
+                        </div>
+                    </div>
+                    <div class="popup-msg popup-msg_type">
+                        <div class="popup-msg__inner">
+                             <div class="popup-msg__item">Тип сообщения</div>
+                            <div class="popup-msg__item">Только комментарии</div>
+                            <div class="popup-msg__item">Только копии</div>
+                        </div>
                     </div>
                 </div>
 
@@ -774,7 +806,45 @@
                     </div>
                 </div>
             </div>
-            <div class="container__right"></div>
+            <div class="container__right">
+                <div class="new-post">
+                    <div class="new-post__inner">
+                        <textarea class="new-post__textarea textarea" placeholder="Написать пост"></textarea>
+                        <div class="new-post__controls">
+                            <div class="smile-attach smile-attach__photo"></div>
+                            <div class="comment-form___button button">Отправить</div>
+                            <div class="comment-form___settings"></div>
+                            <div class="comment-form___attach">Прикрепить</div>
+                        </div>
+                        <div class="new-post__sub-controls">
+                            <div class="comment-form___checkbox"></div>
+                            <div class="comment-form___checkbox-text">Только для друзей</div>
+                        </div>
+                        <div class="popup-msg popup-wall_type_attach-wall">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item">Документ</div>
+                                <div class="popup-msg__item">Аудиозапись</div>
+                                <div class="popup-msg__item">Видеозапись</div>
+                                <div class="popup-msg__item">Фотографию</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs-list">
+                    <div class="tabs-list__inner">
+                        <div class="tabs-list__item tabs-list__item_active">Новости</div>
+                        <div class="tabs-list__item">
+                            <span class="tabs-list__item-text">Ответы</span>
+                            <!-- <span class="tabs-list__item-count">7</span> -->
+                        </div>
+                        <div class="tabs-list__item">Обновления</div>
+                        <div class="tabs-list__item">Комментарии</div>
+                        <div class="tabs-list__item">Рекомендации</div>
+                        <div class="tabs-list__item">Статьи</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
