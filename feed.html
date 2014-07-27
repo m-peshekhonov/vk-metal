@@ -9,6 +9,7 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="feed.js"></script>
+    <script src="scroll.js"></script>
     <link rel="shortcut icon" href="https://vk.com/images/faviconnew.ico?3" />
 
     <title>Новости</title>
@@ -840,12 +841,9 @@
 
                 <div class="tabs-list">
                     <div class="tabs-list__inner">
-                        <div class="tabs-list__item tabs-list__item_news tabs-list__item_active">Новости</div>
-                        <div class="tabs-list__item">
-                            <span class="tabs-list__item-text">Ответы</span>
-                            <!-- <span class="tabs-list__item-count">7</span> -->
-                        </div>
-
+                        <a href="feed.html" class="tabs-list__item tabs-list__item_news tabs-list__item_active">Новости</a>
+                        <span class="tabs-list__icon"></span>
+                        <a href="replies.html" class="tabs-list__item">Ответы</a>
                         <div class="tabs-list__item">Обновления</div>
                         <div class="tabs-list__item">Комментарии</div>
                         <div class="tabs-list__item">Рекомендации</div>
@@ -897,6 +895,10 @@
             </div>
         </div>
 
+    <div class="scroll-top" id="gotop" onmousedown="top.goTop(0.2, 0); return false;">
+        <div class="scroll-top__text">Наверх</div>
+    </div>
+    
     </div>
 </body>
 </html>

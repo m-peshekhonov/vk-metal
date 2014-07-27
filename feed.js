@@ -1,10 +1,12 @@
 $(function() {
 
-    var commentForm = $('.comment-form'),
+    var page = $('.page'),
+        commentForm = $('.comment-form'),
         attachCommentLink = $('.comment-form___attach'),
         attachCommentPopup = $('.popup-wall_type_attach-wall'),
         textareaComment = $('.comment-form__textarea'),
         closeFormComment = $('.comment-form___button-cancel'),
+        hideForm = $('.comment-form___button-cancel-2'),
         filterNews = $('.menu__item_type_news'),
         filterNewsPopup = $('.popup-news_filter'),
         moreText = $('.box__text_more_yes'),
@@ -20,8 +22,9 @@ $(function() {
         newPostTextarea = $('.new-post__textarea'),
         headHeight = $('.header').height(),
         tabsList = $('.tabs-list'),
-        tabsPopupLink = $('.tabs-list__item_news'),
-        tabsPopup = $('.popup-news_newtabs');
+        tabsPopupLink = $('.tabs-list__icon'),
+        tabsPopup = $('.popup-news_newtabs'),
+        repliesForm = $('.reply__content_form');
 
     setSourceheight();
 
@@ -68,10 +71,15 @@ $(function() {
 
     sourceLink.on('click', function(e) {
         e.preventDefault();
+        page.addClass('page_noscroll');
+
         sourcePopup.addClass('popup_show');
     });
 
     $('.close_source, .paranja').on('click', function() {
+
+        page.removeClass('page_noscroll');
+
         sourcePopup.removeClass('popup_show');
     });
 
@@ -95,7 +103,7 @@ $(function() {
         $(this).parents('.new-post').find('.popup-msg').addClass('popup-msg_show');
     });
 
-    newPostTextarea.on('click', function() {
+    newPostTextarea.on('mousedown', function() {
         $(this).addClass('new-post__textarea_show');
     });
 
@@ -136,6 +144,19 @@ $(function() {
     $('.popup-wall_type_tabs').on('mouseleave', function() {
         $(this).parents('.tabs-list').find('.popup-wall_type_tabs').removeClass('popup-msg_show');
     });
+
+    $('.reply__item_open').on('click', function() {
+        $('.reply__item_hide').removeClass('reply__item_hide');
+    });
+
+    repliesForm.on('click', function() {
+        $(this).parents('.reply__item').find('.comment-form_hide').toggle();
+    });
+
+    hideForm.on('click', function() {
+        $(this).parents('.comment-form_replies').hide();
+    });
+
 
     function setSourceheight() {
         sourceList.css('height', $(window).height() - 260);

@@ -21,21 +21,22 @@ $(function() {
         $('.popup-msg_type_attach').removeClass('popup-msg_show');
     }
 
-    $('.menu_show').hover(function(e) {
+    $('.menu_show').on('click', function(e) {
         e.preventDefault();
 
         $('.popup-msg_type_all').addClass('popup-msg_show');
         $('.popup-msg_type_media').removeClass('popup-msg_show');
     });
 
-    $('.media_show').hover(function(e) {
+    $('.media_show').on('click', function(e) {
         e.preventDefault();
 
         $('.popup-msg_type_media').addClass('popup-msg_show');
         $('.popup-msg_type_all').removeClass('popup-msg_show');
     });
 
-    $('.settings_open').hover(function() {
+    $('.settings_open').on('click', function(e) {
+         e.preventDefault();
 
         $('.popup-msg_settings').addClass('popup-msg_show');
     });
@@ -52,7 +53,7 @@ $(function() {
         $(this).removeClass('popup-msg_show');
     });
 
-    $('.userform__attach').hover(function() {
+    $('.userform__attach').on('mouseover', function() {
         $('.popup-msg_type_attach').addClass('popup-msg_show');
     });
 

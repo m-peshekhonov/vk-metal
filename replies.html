@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' type='text/css' href='css/common.css' />
+    <link rel='stylesheet' type='text/css' href='css/index.css' />
+    <link rel='stylesheet' type='text/css' href='css/feed.css' />
+    <link rel='stylesheet' type='text/css' href='css/fontello.css' />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="feed.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <link rel="shortcut icon" href="https://vk.com/images/faviconnew.ico?3" />
+
+    <title>Новости</title>
+</head>
+<body class="page">
+    <div class="pager__inner">
+
+        <div class="header">
+            <div class="header__inner">
+                <div class="header__wrapper-menu-open">
+                    <div class="header__logo logo"></div>
+
+                    <div class="tumbler">
+                        <div class="tumbler__inner">
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                            <div class="tumbler__item"></div>
+                        </div>
+                        <div class="tumbler__counter">2</div>
+                    </div>
+                </div>
+
+                <div class="usermenu">
+                    <div class="usermenu__inner">
+                        <div class="usermenu__item">Моя Страница</div>
+                        <div class="usermenu__item">
+                            Мои Друзья
+                            <div class="usermenu__counter">5k</div>
+                        </div>
+                        <div class="usermenu__item">Мои Фотографии</div>
+                        <div class="usermenu__item">Мои Видеозаписи</div>
+                        <div class="usermenu__item">Мои Аудиозаписи</div>
+                        <div class="usermenu__item">
+                            Мои Сообщения
+                            <div class="usermenu__counter">7</div>
+                        </div>
+                        <div class="usermenu__item">Мои Группы</div>
+                        <div class="usermenu__item">Мои Новости</div>
+                        <div class="usermenu__item">Мои Ответы</div>
+                        <div class="usermenu__item">Мои Закладки</div>
+                        <div class="usermenu__item usermenu__item_separate">Мои Настройки</div>
+                        <div class="usermenu__item">Приложения</div>
+                        <div class="usermenu__item">Документы</div>
+                    </div>
+                </div>
+
+                <input type="text" value="Поиск по сайту" class="head-search"/>
+                <div class="user">
+                    <div class="user__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                    <div class="user__name">Михаил</div>
+                </div>
+                <div class="search-result">
+                    <div class="search-result__inner">
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c614916/v614916534/10f6b/VpRkRbsKCMI.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анечка Климина</div>
+                                <div class="search-result__user-info">Россия, Ялта</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Надя Шувалова</div>
+                                <div class="search-result__user-info">Россия, Симферополь</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c619331/v619331901/dd9c/YXTJcv1DrGw.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анастасия Земскова</div>
+                                <div class="search-result__user-info">Украина, Кривой Рог</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c408321/v408321005/9bdf/yNQ6cJhHxZ4.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Давид Ракитянский</div>
+                                <div class="search-result__user-info">Россия, Партенит</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c424620/v424620679/3b05/NAauzob2Uus.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Анатолий Давыдчик</div>
+                                <div class="search-result__user-info">Беларусь, Минск</div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620817/v620817728/980e/2HUzWnjYCm8.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Денис Прокопов</div>
+                                <div class="search-result__user-info">Литва, Вильнюс</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <div class="search-result__user-avatar" style="background-image: url(https://pp.vk.me/c620427/v620427207/3cf1/BETWpix_rXg.jpg)"></div>
+                            <div class="search-result__user-inner">
+                                <div class="search-result__user-name">Инна Ивчук</div>
+                                <div class="search-result__user-info">Россия, Ялта</div>
+                                <div class="search-result__user-online"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <i class="icon-edit-1 header__newpost"></i> -->
+                <div class="header__menu menu">
+                    <div class="menu__item"><a class="link" href="#">люди</a></div>
+                    <div class="menu__item"><a class="link" href="#">сообщества</a></div>
+                    <div class="menu__item"><a class="link" href="#">игры</a></div>
+                    <div class="menu__item"><a class="link" href="#">музыка</a></div>
+                    <div class="menu__item"><a class="link" href="#">помощь</a></div>
+                    <div class="menu__item"><a class="link" href="#">выйти</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__left">
+                <div class="news-top">
+                    <div class="menu cf news-top__menu">
+                        <div class="menu__item menu__item_type_news">Все новости</div>
+                        <div class="popup-msg popup-news_filter">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item popup-msg__item_active">Все новости</div>
+                                <div class="popup-msg__item">Популярные новости</div>
+                            </div>
+                        </div>
+                        <div class="menu__item menu__item_pos_right">
+                            <a class="link search_msg search_tumb" href="#">Поиск</a>
+                            <a class="link source_link" href="#">Список источников</a>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="search-adv">
+                    <div class="search-adv__inner">
+                        <div class="search-adv__search icon-search">
+                            <input class="input_type_search-msg adv-search-input" value="Поиск по новостям" type="text"/>
+                        </div>
+                        <div class="search-adv__item">
+                            <div class="searchblock__item msg-type-select searchblock__select select">Тип сообщения</div>
+                            <div class="searchblock__item searchblock__select select">Вид прикрепления</div>
+                            <div class="searchblock__item searchblock__select select">«Мне нравится»</div>
+                        </div>
+                        <div class="search-adv__item">
+                            <div class="searchblock__item searchblock__select select">Упоминание ссылки</div>
+                            <div class="searchblock__item searchblock__select select">Упоминание текста</div>
+                            <div class="searchblock__input searchblock__input">
+                                <input class="input_type_search-msg" value="Исключить слова" type="text"/>
+                            </div>
+                        </div>
+                        <div class="search-icon">
+                            <div class="search-icon__ico"></div>
+                            <div class="search-icon__text">Геолокация</div>
+                        </div>
+                    </div>
+                    <div class="popup-msg popup-msg_type">
+                        <div class="popup-msg__inner">
+                             <div class="popup-msg__item">Тип сообщения</div>
+                            <div class="popup-msg__item">Только комментарии</div>
+                            <div class="popup-msg__item">Только копии</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup popup_type_source">
+                    <div class="popup__inner">
+
+                        <div class="popup__top-block">
+                            <div class="popup__top-title">Чьи записи показывать в Новостях?</div>
+                            <div class="popup__close close_source">Закрыть</div>
+                        </div>
+
+                        <div class="tabs-light">
+                            <div class="tabs-light__item tabs-light__item_active">Все</div>
+                            <div class="tabs-light__item">Показываются <span>271</span></div>
+                            <div class="tabs-light__item">Не показываются <span>57</span></div>
+                        </div>
+
+                        <div class="popup__search">
+                            <div class="sidebar__search-wrapper icon-search">
+                                <input type="text" class="input input_theme_gray input_filter-fr" value="Начните вводить имя.."/>
+                                <div class="select-search"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu userlist userlist_source">
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618330/v618330609/641c/AYKrLl1P_Fo.jpg)"></div>
+                                <div class="userlist__inner">
+                                    <a href="#" class="userlist__name link">Alexandr Panasiyk</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_2">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c616716/v616716690/15c66/epds5vKbWxM.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Вадим Елистратов</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_3">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620324/v620324145/fa18/_iwM6t40yMU.jpg)"></div>
+                                <div class="userlist__inner">
+                                    <a href="#" class="userlist__name link">Неонилла Усенко</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_4">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c617522/v617522257/1331d/1M1ftHWJkQQ.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Алина Оникиева</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_3">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c616228/v616228452/15406/sGx9wUKAkWY.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Лена Оболонская</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_2">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620430/v620430145/f0bb/pGD6ZzwFKkE.jpg)"></div>
+                                <div class="userlist__inner">
+                                    <a href="#" class="userlist__name link">Руслан Мендус</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c11454/v11454126/1213/lpc0nMsUgtw.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Eugene Godunov</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_4">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618228/v618228112/a99b/KriDaytXiCQ.jpg)"></div>
+                                <div class="userlist__inner">
+                                    <a href="#" class="userlist__name link">Анастасия Тюева</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_2">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c618819/v618819483/5e15/a1Pq-pxF57k.jpg)"></div>
+                                <div class="userlist__inner">
+                                    <a href="#" class="userlist__name link">Дима Кокорев</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Надя Шувалова</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c617616/v617616045/12d74/VDcZy-VyfO4.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Анна Александрова</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c6067/v6067470/c196/AYzZTUGyKAQ.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Кирилл Ромашов</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c314931/v314931963/2a5b/a7SA87RYtgU.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Екатерина Фураева</a>
+                                </div>
+                            </div>
+
+                            <div class="menu__item userlist__item userlist__item_active  userlist__item_pos_1">
+                                <div class="userlist__avatar" style="background-image: url(https://pp.vk.me/c322126/v322126351/3c2c/4sUry3heMAo.jpg)"></div>
+                                <div class="userlist__inner userlist__inner_online_yes">
+                                    <a href="#" class="userlist__name link">Кристина Червинская</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="cr-dlg-wrapper">
+                            <div class="black-list">Чёрный список <span>201</span></div>
+                            <div class="button creat-dlg-btn">Сохранить</div>
+                            <!-- <div class="button close_popup-button button_light close_source">Отмена</div> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="paranja"></div>
+
+                <div class="feed">
+                    <div class="reply">
+                        <div class="reply__inner">
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(https://pp.vk.me/c322126/v322126351/3c2c/4sUry3heMAo.jpg)">
+                                    <div class="reply__user-c">+</div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Кристина Червинская</a>
+                                    <div href="#" class="reply__text-gray">приняла Вашу заявку в друзья</div>
+                                    <div class="reply__date">3 часа назад</div>
+                                </div>
+                            </div>
+                            <div class="reply__item reply__item_open reply__item_cursor">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs618225.vk.me/v618225776/10986/K_mOGppiwRA.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Alek Sandra</a>
+                                    <div href="#" class="reply__text-gray">оценила <b>3</b> Ваших фотографии</div>
+                                    <div class="reply__tumbler"></div>
+                                    <div class="reply__image" style="background-image: url(http://cs616927.vk.me/v616927775/14618/vHcMz0VNv50.jpg)"></div>
+                                    <div class="reply__date">3 часа назад</div>
+                                </div>
+                            </div>
+
+                             <div class="reply__item reply__item_hide reply__item_cursor">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs618225.vk.me/v618225776/10986/K_mOGppiwRA.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Alek Sandra</a>
+                                     <div href="#" class="reply__text-gray">оценила Вашу <a href="#" class="link">фотографию</a></div>
+                                    <div class="reply__image" style="background-image: url(http://cs616927.vk.me/v616927775/1484e/GRt-9BmJ3eo.jpg)"></div>
+                                    <div class="reply__date">3 часа назад</div>
+                                </div>
+                            </div>
+
+                             <div class="reply__item reply__item_hide reply__item_cursor">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs618225.vk.me/v618225776/10986/K_mOGppiwRA.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Alek Sandra</a>
+                                    <div href="#" class="reply__text-gray">оценила Вашу <a href="#" class="link">фотографию</a></div>
+                                    <div class="reply__image" style="background-image: url(http://cs616927.vk.me/v616927775/1483e/BqWilpS0ER0.jpg)"></div>
+                                    <div class="reply__date">3 часа назад</div>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(https://pp.vk.me/c620521/v620521416/c01c/rL0ksdHIt74.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Надя Шувалова</a>
+                                    <div href="#" class="reply__text-gray">оценила Вашу <a href="#" class="link">фотографию</a></div>
+                                    <div class="reply__image" style="background-image: url(http://cs616927.vk.me/v616927775/14601/yWlyEQ1Ao8k.jpg)"></div>
+                                    <div class="reply__date">cегодня в 17:35</div>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(https://pp.vk.me/c620427/v620427207/3cf1/BETWpix_rXg.jpg)">
+                                    <div class="reply__user-c reply__user-c-blue">+</div>
+                                </div>
+
+                                <div class="reply__content reply__content_many">
+                                    <a href="#" class="reply__user-name link">Инна Ивчук</a>
+                                    <span>и еще <b>3</b> человека</span>
+                                    <div href="#" class="reply__text-gray">подписались на Ваши обновления</div>
+                                    <div class="reply__avatars">
+                                        <div class="reply__user-avatar-mini" style="background-image: url(https://pp.vk.me/c424620/v424620679/3b05/NAauzob2Uus.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(https://pp.vk.me/c620817/v620817728/980e/2HUzWnjYCm8.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(https://pp.vk.me/c408321/v408321005/9bdf/yNQ6cJhHxZ4.jpg)"></div>
+                                    </div>
+                                    <div class="reply__date">сегодня в 14:07</div>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs608429.vk.me/v608429610/89f2/JhjlDpusXn8.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Варвара Богородская </a>
+                                    <div href="#" class="reply__text-gray">оценила Ваш комментарий 
+                                        <a href="#" class="link">Хороша Варя</a>
+                                         <span><img class="smile" style="background-position: 0px -102px"src="https://vk.com/images/blank.gif"/> к</span>
+                                        <a href="#" class="link">фотографии</a>
+                                    </div>
+                                    <div class="reply__image" style="background-image: url(http://cs618328.vk.me/v618328610/11d37/y8mcAc7jxo4.jpg)"></div>
+                                    <div class="reply__date">cегодня в 12:46</div>
+                                </div>
+                            </div>
+                            <div class="reply__item reply__item_cursor">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs11454.vk.me/v11454126/1214/nGnvz99bZN4.jpg)">
+                                </div>
+
+                                <div class="reply__content reply__content_form reply__content_many">
+                                    <a href="#" class="reply__user-name link">Eugene Godunov</a>
+                                    <div href="#" class="reply__text">Оооооооооооооооооо!
+                                        <img class="smile" style="background-position: 0px 85px"src="https://vk.com/images/blank.gif"/>
+                                        <img class="smile" style="background-position: 0px 85px"src="https://vk.com/images/blank.gif"/>
+                                        <img class="smile" style="background-position: 0px 85px"src="https://vk.com/images/blank.gif"/>
+                                        качает
+                                    </div>
+                                    <div class="reply__date">25 июля в 22:20</div>
+                                    <span href="#" class="reply__text-bottom">на Вашу запись</span>
+                                    <a href="#" class="link">Wiz Khalifa, Juicy J & Ty Dolla $ign – Shell Shocked..</a>
+                                </div>
+
+                                <div class="reply__controls">
+                                    <div class="reply__hide"></div>
+                                    <div class="reply__like-comment icon-heart-2"></div>
+                                </div>
+
+                                <div class="comment-form comment-form_open comment-form_hide comment-form_replies">
+                                    <div class="comment-form__inner">
+                                        <div class="comment-form__avatar" style="background-image: url(https://pp.vk.me/c306212/v306212775/98b1/_Lu_DekaTWU.jpg)"></div>
+                                        <textarea class="comment-form__textarea" placeholder="Прокомментировать"></textarea>
+                                        <div class="comment-form__controls">
+                                            <div class="smile-attach"><i class="icon-emo-happy"></i></div>
+                                            <div class="comment-form___button button">Отправить</div>
+                                            <div class="comment-form___button-cancel-2 button">Отмена</div>
+                                            <div class="comment-form___attach">Прикрепить</div>
+                                        </div>
+                                        <div class="popup-msg popup-wall_type_attach-wall">
+                                            <div class="popup-msg__inner">
+                                                <div class="popup-msg__item">Документ</div>
+                                                <div class="popup-msg__item">Аудиозапись</div>
+                                                <div class="popup-msg__item">Видеозапись</div>
+                                                <div class="popup-msg__item">Фотографию</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs618330.vk.me/v618330609/641c/AYKrLl1P_Fo.jpg)">
+                                    <div class="reply__user-c reply__user-c-like"><i class="icon-heart-2 reply__like"></i></div>
+                                </div>
+
+                                <div class="reply__content reply__content_many">
+                                    <a href="#" class="reply__user-name link">Alexandr Panasiyk</a>
+                                    <span>и еще <b>7</b> человек оценили Вашу запись</span>
+                                    <a href="#" class="link">В догонку пара <br/>фотокарточек VSCOcam из Стамбула и островов</a>
+                                    <div class="reply__avatars reply__avatars_top">
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs616122.vk.me/v616122074/118bf/5Nqtb8IELck.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs616228.vk.me/v616228452/15406/sGx9wUKAkWY.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs614924.vk.me/v614924904/1081d/35Tx0qMKkE0.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs619818.vk.me/v619818039/d3be/lftqjh9-rkc.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs618518.vk.me/v618518739/bd36/9gW5dyTkrcg.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs616324.vk.me/v616324281/14fb1/EjoxO3GTEdo.jpg)"></div>
+                                        <div class="reply__user-avatar-mini" style="background-image: url(http://cs614825.vk.me/v614825273/14620/Dw8d0jVfeME.jpg)"></div>
+                                    </div>
+                                    <div class="reply__image" style="background-image: url(http://cs616927.vk.me/v616927775/1484b/DovMe_5IP9A.jpg)"></div>
+                                    <div class="reply__date">24 июля в 17:57</div>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs618228.vk.me/v618228112/a99c/3KMwPjhXCAY.jpg)">
+                                </div>
+
+                                <div class="reply__content reply__content_many">
+                                    <a href="#" class="reply__user-name link">Анастасия Тюева</a>
+                                    <div href="#" class="reply__text">Так точно!
+                                    </div>
+                                    <div class="reply__image" style="background-image: url(http://cs6056.vk.me/v6056112/f4ad/4DSP3JnLQk8.jpg)"></div>
+                                    <div class="reply__date">21 июл в 21:14</div>
+                                    <span href="#" class="reply__text-bottom">в ответ на Ваш комментарий</span>
+                                    <a href="#" class="link">Это в Москва-сити ?)</a>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs406121.vk.me/v406121600/9fde/WL5Jz3azYcg.jpg)">
+                                </div>
+
+                                <div class="reply__content reply__content_many">
+                                    <a href="#" class="reply__user-name link">Илья Гришин</a>
+                                    <div href="#" class="reply__text">Михаил, простительно. Мы не успевали заснять и третьего круга он не проехал.
+                                    </div>
+                                    <div class="reply__image" style="background-image: url(http://cs618026.vk.me/v618026600/b2ab/Pp9dsiskoT0.jpg)"></div>
+                                    <div class="reply__date">15 июля в 21:49</div>
+                                    <span href="#" class="reply__text-bottom">в комментариях к записи</span>
+                                    <a href="#" class="link">Существуют мелочи, которые нельзя...</a>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs412116.vk.me/v412116559/842f/g0FDRmISUT0.jpg)">
+                                </div>
+
+                                <div class="reply__content reply__content_many">
+                                    <a href="#" class="reply__user-name link">Андрей Мима</a>
+                                    <div href="#" class="reply__text">Михаил, думаю все непонимание из-за того что Вы не заметили что к моему <br/> посту прикреплена эта же ссылка 
+                                        <img class="smile" src="https://vk.com/images/blank.gif"/>
+                                    </div>
+                                    <div class="reply__image" style="background-image: url(http://cs620330.vk.me/v620330559/28a8/pECl7rw6GDk.jpg)"></div>
+                                    <div class="reply__date">11 июля в 11:23</div>
+                                    <span href="#" class="reply__text-bottom">в комментариях к записи</span>
+                                    <a href="#" class="link">Вовремя после нового года успел заехать..</a>
+                                </div>
+                            </div>
+                            <div class="reply__item">
+                                <div class="reply__user-avatar" style="background-image: url(http://cs616324.vk.me/v616324281/14fb1/EjoxO3GTEdo.jpg)">
+                                    <div class="reply__user-c">+</div>
+                                </div>
+
+                                <div class="reply__content">
+                                    <a href="#" class="reply__user-name link">Кристина Афанасьева</a>
+                                    <div href="#" class="reply__text-gray">приняла Вашу заявку в друзья</div>
+                                    <div class="reply__date">10 июля в 10:17</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="new-post">
+                    <div class="new-post__inner">
+                        <textarea class="new-post__textarea textarea" placeholder="Написать пост"></textarea>
+                        <div class="new-post__controls">
+                            <div class="smile-attach smile-attach__photo"></div>
+                            <div class="comment-form___button button">Отправить</div>
+                            <div class="comment-form___settings"></div>
+                            <div class="comment-form___attach">Прикрепить</div>
+                        </div>
+                        <div class="new-post__sub-controls">
+                            <div class="comment-form___checkbox"></div>
+                            <div class="comment-form___checkbox-text">Только для друзей</div>
+                        </div>
+                        <div class="popup-msg popup-wall_type_attach-wall">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item">Документ</div>
+                                <div class="popup-msg__item">Аудиозапись</div>
+                                <div class="popup-msg__item">Видеозапись</div>
+                                <div class="popup-msg__item">Фотографию</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs-list">
+                    <div class="tabs-list__inner">
+                        <a href="feed.html" class="tabs-list__item tabs-list__item_news">Новости</a>
+                        <span class="tabs-list__icon"></span>
+                        <a href="replies.html" class="tabs-list__item tabs-list__item_active">Ответы</a>
+                        <div class="tabs-list__item">Обновления</div>
+                        <div class="tabs-list__item">Комментарии</div>
+                        <div class="tabs-list__item">Рекомендации</div>
+                        <div class="tabs-list__item">Статьи</div>
+                        <div class="tabs-list__item tabs-list__item_sep">Политика</div>
+                        <div class="tabs-list__item">Игры</div>
+                        <div class="tabs-list__item">Юмор</div>
+                        <div class="more-tabs"></div>
+                        <div class="popup-msg popup-news_newtabs">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item popup-msg__item_active">Фотографии</div>
+                                <div class="popup-msg__item popup-msg__item_active">Рекомендации</div>
+                                <div class="popup-msg__item">Друзья</div>
+                                <div class="popup-msg__item popup-msg__item_active">Сообщества</div>
+                                <div class="popup-msg__item popup-msg__item_active">Статьи</div>
+                                <div class="popup-msg__item">Понравилось</div>
+                                <div class="popup-msg__item popup-msg__item_tab">Добавить вкладку</div>
+                            </div>
+                        </div>
+                        <div class="popup-msg popup-wall_type_tabs">
+                            <div class="popup-msg__inner">
+                               <div class="popup-msg__col popup-msg__col_1">
+                                    <div class="popup-msg__item">
+                                        <span class="popup-msg__item-text">Дизайн<span>
+                                        <span class="popup-msg__item-icon"><span>
+                                    </div>
+                                    <div class="popup-msg__item">Авто и мото<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Путешествия<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Технологии<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Apple<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Спорт<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Живтоные<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Наука<span class="popup-msg__item-icon"><span></div>
+                               </div>
+                                <div class="popup-msg__col popup-msg__col_2">
+                                    <div class="popup-msg__item">ВКонтакте<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Соц. сети<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Деньги<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Самолеты<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Все о еде<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Клубы<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Сериалы<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">IT сфера<span class="popup-msg__item-icon"><span></div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="scroll-top" id="gotop" onmousedown="top.goTop(0.2, 0); return false;">
+        <div class="scroll-top__text">Наверх</div>
+    </div>
+    </div>
+</body>
+</html>
