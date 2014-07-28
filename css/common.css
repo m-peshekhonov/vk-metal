@@ -32,6 +32,11 @@
     text-decoration: underline;
 }
 
+.black
+{
+    color: #242424;
+}
+
 .cf:after
 {
     clear: both;
@@ -76,6 +81,8 @@
 
 .user
 {
+    display: none;
+    
     position: absolute;
     top: 5px;
     right: 20px;
