@@ -14,7 +14,6 @@ $(function() {
         sourceList = $('.userlist_source'),
         sourceLink = $('.source_link'),
         sourcePopup = $('.popup_type_source'),
-        headerLogo = $('.header__wrapper-menu-open'),
         searchTumbler = $('.search_tumb'),
         selectTypeSearch = $('.msg-type-select'),
         select = $('.select'),
@@ -24,13 +23,28 @@ $(function() {
         tabsList = $('.tabs-list'),
         tabsPopupLink = $('.tabs-list__icon'),
         tabsPopup = $('.popup-news_newtabs'),
-        repliesForm = $('.reply__content_form');
+        repliesForm = $('.reply__content_form'),
+        repliesFilter = $('.reply_filter'),
+        reppliesPopupFilter = $('.popup-news_r-filter');
 
     setSourceheight();
 
     select.on('click', function() {
         $(this).toggleClass('select_active');
     });
+
+    //  Открыть попап с фильтрами овтетов
+    repliesFilter.on('click', function(e) {
+        e.preventDefault();
+
+        reppliesPopupFilter.addClass('popup-msg_show');
+    });
+
+    //  Закрыть попап с фильтрами овтетов
+    reppliesPopupFilter.on('mouseleave', function() {
+        $(this).removeClass('popup-msg_show');
+    });
+
 
     //  Открыть попап с аттач-ссылками
     attachCommentLink.on('mouseover', function() {
@@ -81,10 +95,6 @@ $(function() {
         page.removeClass('page_noscroll');
 
         sourcePopup.removeClass('popup_show');
-    });
-
-    headerLogo.on('mouseover', function() {
-        $('.tumbler__counter').hide(200);
     });
 
     searchTumbler.on('click', function() {

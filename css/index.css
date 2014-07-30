@@ -21,14 +21,14 @@
 
 .container__left
 {
-    width: 280px;
+    width: 300px;
 
     border-right: 2px solid #E6E8EB;
 }
 
 .container__right
 {
-    width: 718px;
+    width: 695px;
 
     margin-left: -5px;
 }
@@ -134,7 +134,7 @@
 
 .userlist__item:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .userlist__item_active,
@@ -164,7 +164,7 @@
 .userlist__inner
 {
     position: relative;
-    width: 179px;
+    width: 194px;
     margin-left: 8px;
 }
 
@@ -172,10 +172,10 @@
 {
     display: inline-block;
 
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
 
-    border-radius: 3px;
+    border-radius: 2px;
     background: #e6e6e6;
     background-size: 100%;
 }
@@ -236,7 +236,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
 
-    max-width: 150px;
+    max-width: 175px;
 }
 
 .userlist__inner:after
@@ -356,7 +356,7 @@
     width: 50px;
     height: 50px;
 
-    border-radius: 3px;
+    border-radius: 2px;
 
     position: relative;
 
@@ -454,7 +454,7 @@
 .m-user__item:hover,
 .m-user__item_active
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .m-user__item,
@@ -465,7 +465,7 @@
 
 .m-user__inner
 {
-    width: 390px;
+    width: 370px;
 }
 
 .m-user__avatar,
@@ -478,8 +478,8 @@
 
 .m-user__info
 {
-    width: 120px;
-    margin: 0 45px 0 5px;
+    width: 125px;
+    margin: 0 40px 0 5px;
 }
 
 .m-user__name
@@ -502,7 +502,7 @@
 
 .m-user__author_active
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
     border-radius: 3px;
 }
 
@@ -522,7 +522,7 @@
 {
     display: inline-block;
 
-    width: 335px;
+    width: 315px;
     height: 35px;
     overflow: hidden;
 
@@ -664,7 +664,7 @@
 
 .button_light:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .usermenu
@@ -675,7 +675,7 @@
     position: absolute;
     z-index: 9;
 
-    margin-left: 13px;
+    margin-left: 0;
 
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
 
@@ -688,7 +688,7 @@
 
     position: relative;
 
-    padding: 8px 40px 8px 21px;
+    padding: 8px 50px 8px 19px;
 
     cursor: pointer;
 }
@@ -708,7 +708,7 @@
             transition: .15s;
             
     border-radius: 3px;
-    background: #EAEFF5;
+    background: #F0F4F9;
     color: #496D94;
     
     font-weight: 700;
@@ -716,7 +716,7 @@
 
 .usermenu__item:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .usermenu__item:hover .usermenu__counter
@@ -775,7 +775,7 @@
 .images-collection__item
 {
     display: block;
-    margin: 0 3px 2px 0;
+    margin: 0 1px 1px 0;
 
     float: left;
 
@@ -796,15 +796,15 @@
 .images-collection_3 .images-collection__item_1
 {
     width: 260px;
-    height: 260px;
+    height: 259px;
 }
 
 /* 5 фоток */
 .images-collection_5 .images-collection__item_1,
 .images-collection_5 .images-collection__item_2
 {
-    width: 195px;
-    height: 195px;
+    width: 194px;
+    height: 194px;
 }
 
 .images-collection_3 .images-collection__item_2,
@@ -845,7 +845,7 @@
     padding: 6px 0;
     color: #496D94;
     cursor: pointer;
-    background: #EAEFF5
+    background: #F0F4F9
 }
 
 .tabs__item_active
@@ -902,7 +902,7 @@
 
 .userlist_forward .userlist__inner
 {
-    width: 298px;
+    width: 294px;
 }
 
 .userlist_forward .userlist__messege
@@ -983,14 +983,14 @@
     visibility: hidden;
     opacity: 0;
 
-    width: 677px;
+    width: 640px;
 
     -webkit-transition: .2s;
        -moz-transition: .2s;
          -o-transition: .2s;
             transition: .2s;
 
-    margin: -50px 0 0 22px;
+    margin: -50px 0 0 30px;
     padding: 10px 0;
 
     border-bottom: 1px solid #E6E8EB;
@@ -1105,7 +1105,7 @@
 
 .searchblock__close-button:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .popup-msg.popup-msg_date
@@ -1171,7 +1171,7 @@
 
 .popup-msg__item:hover
 {
-    background-color: #EAEFF5;
+    background-color: #F0F4F9;
 }
 
 .popup-msg_show ~ .popup__helper
@@ -1210,7 +1210,7 @@
 .smile-attach
 {
     position: absolute;
-    right: 187px;
+    right: 176px;
 
     margin-top: -43px;
 
@@ -1263,6 +1263,7 @@
 
 .like-post__c
 {
+    display: inline-block;
     color: #7295B2;
 
     font-weight: 700;
@@ -1450,4 +1451,32 @@
 
     margin-left: 5px;
     margin-top: 0;
+}
+
+.footer
+{
+    position: relative;
+    z-index: 2;
+
+    width: 1000px;
+
+    margin: 15px auto;
+}
+
+.footer__item,
+.footer__left,
+.footer__right
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer__item .link
+{
+    padding: 4px 9px;
+}
+
+.footer__right
+{
+    float: right;
 }

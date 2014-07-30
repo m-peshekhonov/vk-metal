@@ -2,7 +2,8 @@ $(function() {
     
     /*  Код для демонстрации функциональности некоторых блоков */
 
-    var windowHeight = $(window).height() - 140; // не нужно на всю высоту экрана
+    var windowHeight = $(window).height() - 140, // не нужно на всю высоту экрана
+        headerLogo = $('.header__wrapper-menu-open');
 
     setHeightContent(windowHeight);
 
@@ -46,6 +47,9 @@ $(function() {
         $(this).removeClass('popup-msg_show');
     });
 
+    headerLogo.on('mouseover', function() {
+        $('.tumbler__counter').hide(200);
+    });
 
     $('.popup__helper, .search_msg').hover(destroyPopup);
 

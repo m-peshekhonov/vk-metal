@@ -51,7 +51,8 @@
     margin-left: 3px;
 }
 
-.menu__item_type_news
+.menu__item_type_news,
+.menu__item_type_photos
 {
     font-size: 14px;
 
@@ -167,7 +168,7 @@
 
     margin-right: 10px;
 
-    border-radius: 3px;
+    border-radius: 2px;
 
     background-size: 100%;
     background-repeat: no-repeat;
@@ -261,7 +262,7 @@
 .box__photo-item
 {
     display: block;
-    margin: 0 3px 2px 0;
+    margin: 0 1px 1px 0;
 
     float: left;
 
@@ -301,7 +302,7 @@
 
 .box__photo-item_4
 {
-    width: 90px;
+    width: 92px;
 }
 
 .box__photo-item_5
@@ -476,10 +477,11 @@
 
 .popup-news_filter
 {
+    top: 44px;
     left: 0;
     right: auto;
 
-    margin: 1px 0 0 1px;
+    margin-left: 1px;
 }
 
 .popup-news_filter .popup-msg__item
@@ -508,7 +510,7 @@
 
 .box__photos_line .box__photo-item_1
 {
-    width: 154px;
+    width: 160px;
 }
 
 .box__photos_line .box__photo-item_2
@@ -528,7 +530,7 @@
 
 .box__photos_line .box__photo-item_5
 {
-    width: 180px;
+    width: 184px;
 }
 
 .box__photos_line .box__photo-item_6
@@ -548,7 +550,7 @@
 
     text-align: center;
 
-    background: #EAEFF5;
+    background: #F0F4F9;
     color: #788A9E;
 
     cursor: pointer;
@@ -598,7 +600,7 @@
 
     margin-right: 10px;
 
-    border-radius: 3px;
+    border-radius: 2px;
 
     background-size: 100%;
 
@@ -850,7 +852,7 @@
 
 .userlist_source .userlist__inner
 {
-    width: 298px;
+    width: 294px;
 }
 
 .popup_type_source .input_theme_gray
@@ -888,7 +890,7 @@
 
 .select-search:hover
 {
-    background-color: #EAEFF5;
+    background-color: #F0F4F9;
 
     opacity: .8;
 }
@@ -909,7 +911,7 @@
 
 .black-list:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }
 
 .black-list span
@@ -1362,6 +1364,8 @@
 {
     display: inline-block;
     vertical-align: top;
+
+    width: 50%;
 }
 
 .popup-msg__col_1
@@ -1619,7 +1623,7 @@
 
 /*.reply__tumbler:hover
 {
-    background: #EAEFF5;
+    background: #F0F4F9;
 }*/
 
 .reply__tumbler:after
@@ -1776,4 +1780,180 @@
 .comment-form_replies.comment-form_open .comment-form__textarea
 {
     width: 530px;
+}
+
+.feed-adv
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.feed-adv__title
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    margin-bottom: 5px;
+}
+
+.feed-adv__text
+{
+    margin: 5px 0;
+}
+
+.feed-adv__pic
+{
+    width: 150px;
+    height: 190px;
+
+    cursor: pointer;
+
+    -webkit-transition: .15s;
+       -moz-transition: .15s;
+         -o-transition: .15s;
+            transition: .15s;
+
+    background-size: cover;
+}
+
+.feed-adv__pic:hover
+{
+    opacity: .8;
+}
+
+.feed-adv__source
+{
+    color: #ACB4BE;
+    cursor: pointer;
+}
+
+.feed-adv__source:hover
+{
+    text-decoration: underline;
+}
+
+.feed-adv__label
+{
+    margin-left: 4px;
+    padding: 0 6px 1px;
+
+    vertical-align: baseline;
+
+    border-radius: 2px;
+
+    color: rgba(255, 255, 255, .95);
+    background: #5780AB
+}
+
+.feed-adv__source,
+.feed-adv__label
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popup-news_r-filter
+{
+    top: 44px;
+    right: 0;
+}
+
+.popup-news_r-filter .popup-msg__item
+{
+    padding: 6px 35px 6px 12px;
+}
+
+.user-photo-feed__inner
+{
+    width: 617px;
+
+    margin: auto;
+    white-space: nowrap;
+}
+
+
+.user-photo-feed__pic
+{
+    display: inline-block;
+
+    margin-left: -3px;
+
+    cursor: pointer;
+    
+    width: 145px;
+    height: 100px;
+
+    -webkit-transition: .15s;
+       -moz-transition: .15s;
+         -o-transition: .15s;
+            transition: .15s;
+
+    background-size: cover;
+}
+
+.box__photo-item_big
+{
+    cursor: pointer;
+
+    -webkit-transition: .15s;
+       -moz-transition: .15s;
+         -o-transition: .15s;
+            transition: .15s;
+}
+
+.user-photo-feed__pic:hover,
+.box__photo-item_big:hover
+{
+    opacity: .8
+}
+
+.user-photo-feed__pic_1
+{
+    width: 66px;
+}
+
+.user-photo-feed__pic_2
+{
+    width: 120px;
+
+    background-position: center right;
+}
+
+.user-photo-feed__pic_3
+{
+    width: 120px;
+
+    background-position: center;
+}
+
+.user-photo-feed__pic_4
+{
+    width: 110px;
+
+    background-position: center;
+}
+
+.user-photo-feed__pic_6
+{
+    width: 63px;
+
+    background-position: center;
+}
+
+.user-photo-feed__info
+{
+    width: 630px;
+
+    margin: 9px 0 9px 35px;
+    padding: 7px 0 3px 0;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #E6E8EB;
+}
+
+.user-photo-feed__inner_actual
+{
+    width: 90%;
 }

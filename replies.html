@@ -130,7 +130,7 @@
                     <div class="menu__item"><a class="link" href="#">люди</a></div>
                     <div class="menu__item"><a class="link" href="#">сообщества</a></div>
                     <div class="menu__item"><a class="link" href="#">игры</a></div>
-                    <div class="menu__item"><a class="link" href="#">музыка</a></div>
+                    <div class="menu__item menu__item_type_music"><a class="link" href="#">музыка</a></div>
                     <div class="menu__item"><a class="link" href="#">помощь</a></div>
                     <div class="menu__item"><a class="link" href="#">выйти</a></div>
                 </div>
@@ -140,48 +140,25 @@
             <div class="container__left">
                 <div class="news-top">
                     <div class="menu cf news-top__menu">
-                        <div class="menu__item menu__item_type_news">Все новости</div>
+                        <div class="menu__item menu__item_type_news">Ответы</div>
                         <div class="popup-msg popup-news_filter">
                             <div class="popup-msg__inner">
-                                <div class="popup-msg__item popup-msg__item_active">Все новости</div>
-                                <div class="popup-msg__item">Популярные новости</div>
+                                <div class="popup-msg__item popup-msg__item_active">Ответы</div>
+                                <div class="popup-msg__item">Уведомления</div>
+                            </div>
+                        </div>
+                        <div class="popup-msg popup-news_r-filter">
+                            <div class="popup-msg__inner">
+                                <div class="popup-msg__item popup-msg__item_active">Стена</div>
+                                <div class="popup-msg__item">Упоминания</div>
+                                <div class="popup-msg__item popup-msg__item_active">Комментарии</div>
+                                <div class="popup-msg__item popup-msg__item_active">Мне нравится</div>
+                                <div class="popup-msg__item">Копии</div>
+                                <div class="popup-msg__item popup-msg__item_active">Подписчики</div>
                             </div>
                         </div>
                         <div class="menu__item menu__item_pos_right">
-                            <a class="link search_msg search_tumb" href="#">Поиск</a>
-                            <a class="link source_link" href="#">Список источников</a>
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="search-adv search-adv_type_feed">
-                    <div class="search-adv__inner">
-                        <div class="search-adv__search icon-search">
-                            <input class="input_type_search-msg adv-search-input" value="Поиск по новостям" type="text"/>
-                        </div>
-                        <div class="search-adv__item">
-                            <div class="searchblock__item msg-type-select searchblock__select select">Тип сообщения</div>
-                            <div class="searchblock__item searchblock__select select">Вид прикрепления</div>
-                            <div class="searchblock__item searchblock__select select">«Мне нравится»</div>
-                        </div>
-                        <div class="search-adv__item">
-                            <div class="searchblock__item searchblock__select select">Упоминание ссылки</div>
-                            <div class="searchblock__item searchblock__select select">Упоминание текста</div>
-                            <div class="searchblock__input searchblock__input">
-                                <input class="input_type_search-msg" value="Исключить слова" type="text"/>
-                            </div>
-                        </div>
-                        <div class="search-icon">
-                            <div class="search-icon__ico"></div>
-                            <div class="search-icon__text">Геолокация</div>
-                        </div>
-                    </div>
-                    <div class="popup-msg popup-msg_type">
-                        <div class="popup-msg__inner">
-                             <div class="popup-msg__item">Тип сообщения</div>
-                            <div class="popup-msg__item">Только комментарии</div>
-                            <div class="popup-msg__item">Только копии</div>
+                            <a class="link search_msg reply_filter" href="#">Фильтр</a>
                         </div>
                     </div>
                 </div>
@@ -571,20 +548,20 @@
                         <a href="feed.html" class="tabs-list__item tabs-list__item_news">Новости</a>
                         <span class="tabs-list__icon"></span>
                         <a href="replies.html" class="tabs-list__item tabs-list__item_active">Ответы</a>
-                        <div class="tabs-list__item">Обновления</div>
                         <div class="tabs-list__item">Комментарии</div>
                         <div class="tabs-list__item">Рекомендации</div>
                         <div class="tabs-list__item">Статьи</div>
                         <div class="tabs-list__item tabs-list__item_sep">Политика</div>
-                        <div class="tabs-list__item">Игры</div>
                         <div class="tabs-list__item">Юмор</div>
                         <div class="more-tabs"></div>
                         <div class="popup-msg popup-news_newtabs">
                             <div class="popup-msg__inner">
-                                <div class="popup-msg__item popup-msg__item_active">Фотографии</div>
+                                <div class="popup-msg__item">Фотографии</div>
+                                <div class="popup-msg__item popup-msg__item_active">Комментарии</div>
                                 <div class="popup-msg__item popup-msg__item_active">Рекомендации</div>
                                 <div class="popup-msg__item">Друзья</div>
-                                <div class="popup-msg__item popup-msg__item_active">Сообщества</div>
+                                <div class="popup-msg__item">Обновления</div>
+                                <div class="popup-msg__item">Сообщества</div>
                                 <div class="popup-msg__item popup-msg__item_active">Статьи</div>
                                 <div class="popup-msg__item">Понравилось</div>
                                 <div class="popup-msg__item popup-msg__item_tab">Добавить вкладку</div>
@@ -607,7 +584,7 @@
                                </div>
                                 <div class="popup-msg__col popup-msg__col_2">
                                     <div class="popup-msg__item">ВКонтакте<span class="popup-msg__item-icon"><span></div>
-                                    <div class="popup-msg__item">Соц. сети<span class="popup-msg__item-icon"><span></div>
+                                    <div class="popup-msg__item">Игры<span class="popup-msg__item-icon"><span></div>
                                     <div class="popup-msg__item">Деньги<span class="popup-msg__item-icon"><span></div>
                                     <div class="popup-msg__item">Самолеты<span class="popup-msg__item-icon"><span></div>
                                     <div class="popup-msg__item">Все о еде<span class="popup-msg__item-icon"><span></div>
@@ -617,6 +594,20 @@
                                </div>
                             </div>
                         </div>
+                        <div class="feed-adv">
+                            <div class="feed-adv__item">
+                                <a href="#" class="feed-adv__title link">Брендовые очки!</a>
+                                <div class="feed-adv__inner">
+                                    <div class="feed-adv__source">www.happyllok.ru</div>
+                                    <div class="feed-adv__label">Реклама</div>
+                                </div>
+                                <div class="feed-adv__text">
+                                    Распродажа в сети "Счастливый взгляд": скидки до 70%! 
+                                </div>
+                                <div class="feed-adv__pic" style="background-image: url(pic/adv2.jpeg)"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
