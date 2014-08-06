@@ -28,7 +28,7 @@
 
 .container__right
 {
-    width: 695px;
+    width: 699px;
 
     margin-left: -5px;
 }
@@ -49,11 +49,11 @@
 
 .sidebar__search-wrapper.icon-search:before
 {
-    font-size: 15px;
+    font-size: 14px;
 
     position: absolute;
     top: 8px;
-    left: 8px;
+    left: 4px;
 
     color: #acb0b4;
 }
@@ -64,7 +64,7 @@
 
     position: absolute;
     top: 13px;
-    left: 21px;
+    left: 15px;
 
     color: #acb0b4;  
 }
@@ -79,7 +79,7 @@
     font-size: 12px;
 
     width: 225px;
-    padding: 8px 12px 9px 32px;
+    padding: 8px 12px 9px 27px;
 
     color: #8C8E91;
 
@@ -324,6 +324,11 @@
 .messege__top-menu .menu__item
 {
     display: inline-block;
+}
+
+.menu__item_big
+{
+    font-size: 14px;
 }
 
 .messege__top-menu .menu__item:last-child
@@ -591,7 +596,7 @@
 
     height: 40px;
 
-    margin-left: 2px;
+    margin-left: 1px;
 
     background: #FFF;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -608,7 +613,7 @@
     height: 38px;
     width: 93%;
 
-    padding-left: 45px;
+    padding-left: 40px;
 
     color: #8C8E91;
 
@@ -682,23 +687,113 @@
     background: #fff;
 }
 
+.usermenu_icons_yes .usermenu__item
+{
+    padding-left: 44px;
+}
+
 .usermenu__item
 {
     font-size: 13px;
 
     position: relative;
 
-    padding: 8px 50px 8px 19px;
+    padding: 10px 50px 10px 20px;
 
     cursor: pointer;
 }
 
+.usermenu_icons_yes  .usermenu__item:after
+{
+    position: absolute;
+    left: 10px;
+    top: 6px;
+
+    content: '';
+
+    width: 24px;
+    height: 22px;
+
+    background-image: url(../pic/menu_icons.png);
+    background-repeat: no-repeat;
+}
+
+.usermenu_icons_yes .usermenu__item_my:after
+{
+    background-position: 0 -152px;
+}
+
+.usermenu_icons_yes .usermenu__item_friends:after
+{
+    background-position: 0 -64px;
+}
+
+.usermenu_icons_yes .usermenu__item_photos:after
+{
+    background-position: 0 -109px;
+}
+
+.usermenu_icons_yes .usermenu__item_video:after
+{
+    background-position: 0 -218px;
+}
+
+.usermenu_icons_yes .usermenu__item_audio:after
+{
+    background-position: 0 -195px;
+}
+
+.usermenu_icons_yes .usermenu__item_message:after
+{
+    background-position: 0 1px;
+}
+
+.usermenu_icons_yes .usermenu__item_groups:after
+{
+    background-position: 0 -88px;
+}
+
+.usermenu_icons_yes .usermenu__item_news:after
+{
+    background-position: 0 -21px;
+}
+
+.usermenu_icons_yes .usermenu__item_replies:after
+{
+    background-position: 0 -43px;
+}
+
+.usermenu_icons_yes .usermenu__item_book:after
+{
+    background-position: 0 -174px;
+}
+
+.usermenu_icons_yes .usermenu__item_settings:after
+{
+    background-position: 0 -174px;
+}
+
+.usermenu_icons_yes .usermenu__item_settings:after
+{
+    background-position: 0 -240px;
+}
+
+.usermenu_icons_yes .usermenu__item_apps:after
+{
+    background-position: 0 -373px;
+}
+
+.usermenu_icons_yes .usermenu__item_docs:after
+{
+    background-image: url(../pic/doc.png);
+    background-position: 5px 4px;
+}
 
 .usermenu__counter
 {
     position: absolute;
-    top: 5px;
-    right: 6px;
+    top: 7px;
+    right: 10px;
 
     padding: 3px 8px;
 
@@ -1479,4 +1574,47 @@
 .footer__right
 {
     float: right;
+}
+
+.tabs-light
+{
+    padding: 0 16px;
+
+    border-bottom: 1px solid #E6E8EB;
+}
+
+.tabs-light__item
+{
+    display: inline-block;
+
+    margin: 0 4px;
+    padding: 10px 13px;
+
+    color: #666;
+
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+         -o-transition: .2s;
+            transition: .2s;
+
+    cursor: pointer;
+}
+
+.tabs-light__item span
+{
+    color: #ACB4BE;
+}
+
+.tabs-light__item:hover
+{
+    color: #496D94;
+}
+
+.tabs-light__item_active
+{
+    box-shadow: 0 1px 0 0 #84AAD3;
+
+    color: #496D94;
+
+    cursor: default;
 }
